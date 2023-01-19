@@ -49,6 +49,13 @@ table {
     border-spacing: 0;
 }
 
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 //Mixins
 
 @mixin flex($direction: row, $justify: flex-start, $align: flex-start){
@@ -65,13 +72,19 @@ table {
     margin-left: $left;
 }
 
+@mixin padding($top: 1em, $right: 1em, $bottom: 1em, $left: 1em){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
 @mixin neomorphism($color: #e0e0e0, $shadow: #bebebe, $inset: #ffffff){
     border-radius: 1.75em;
     background: #e0e0e0;
     box-shadow: inset 1.5em 1.5em 3em #bebebe,
                 inset -1.5em -1.5em 3em #ffffff;
 }
-// 24px son en em igual a 1.5em
 
 
 
@@ -81,6 +94,7 @@ table {
     @include flex(row, space-evenly, center);
     @include margin();
     @include neomorphism();
+    @include padding(1em, 0, 1em, 0);
     &-figure{
 
         max-width: 5em;
@@ -92,6 +106,85 @@ table {
     }
 
     &-title{
-        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+.Menu{
+    @include flex(row, space-evenly, center);
+    @include margin();
+    @include neomorphism();
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    &-figure{
+        max-width: 4.5em;
+        @include padding(1em, 1em, 1em, 1em)
+    }
+
+    &-figure:hover{
+        animation: animate 0.5s;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+
+    &-img{
+        width: 100%;
+        display: block;
+    }
+}
+
+.Events{
+    @include flex(column, center, center);
+    @include margin(1em, 1em, 1em, 1em);
+    @include padding(1em, 1em, 1em, 1em);
+    &-title{
+        align-self: start;
+        font-size: 1.5rem;
+    }
+
+}
+
+.Data{
+
+    &-item{
+        @include margin(1.2em, 0, 0, 0)
+    }
+    &-title{
+        @include margin( 0, 0, .5em, 0)
+    }
+    &-description{
+        @include padding(0, 0, 0, 1em)
+    }
+
+}
+
+.Footer{
+    @include flex(row, space-evenly, center);
+    position: fixed;
+    bottom: 0;
+    &-figure{
+        max-width: 100%;
+    }
+    &-logo{
+        width: 100%;
+        display: block;
     }
 }
