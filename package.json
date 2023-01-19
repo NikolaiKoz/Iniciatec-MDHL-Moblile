@@ -1,0 +1,23 @@
+{
+  "name": "mdhl-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "npx sass --no-source-map ./src/scss/app.scss ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolaiKoz/Iniciatec-MDHL-Moblile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolaiKoz/Iniciatec-MDHL-Moblile/issues"
+  },
+  "homepage": "https://github.com/NikolaiKoz/Iniciatec-MDHL-Moblile#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
