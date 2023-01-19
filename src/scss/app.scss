@@ -49,4 +49,49 @@ table {
     border-spacing: 0;
 }
 
+//Mixins
 
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin margin($top: 1em, $right: 1em, $bottom: 1em, $left: 1em){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin neomorphism($color: #e0e0e0, $shadow: #bebebe, $inset: #ffffff){
+    border-radius: 1.75em;
+    background: #e0e0e0;
+    box-shadow: inset 1.5em 1.5em 3em #bebebe,
+                inset -1.5em -1.5em 3em #ffffff;
+}
+// 24px son en em igual a 1.5em
+
+
+
+
+.Header{
+
+    @include flex(row, space-evenly, center);
+    @include margin();
+    @include neomorphism();
+    &-figure{
+
+        max-width: 5em;
+
+    }
+    &-logo{
+        width: 100%;
+        display: block;
+    }
+
+    &-title{
+        font-size: 1.5em;
+    }
+}
