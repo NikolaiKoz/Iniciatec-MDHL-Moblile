@@ -4,11 +4,11 @@
     @include neomorphism();
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
 
     &-figure{
-        max-width: 4.5em;
+        max-width: 3em;
         @include padding(1em, 1em, 1em, 1em)
     }
 

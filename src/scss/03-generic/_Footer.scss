@@ -1,13 +1,11 @@
 
 .Footer{
-    @include flex(row, space-evenly, center);
-    position: fixed;
-    bottom: 0;
-    &-figure{
-        max-width: 100%;
-    }
-    &-logo{
-        width: 100%;
-        display: block;
-    }
+
+    background-color: red;
+    height: 200px;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+
+
 }
