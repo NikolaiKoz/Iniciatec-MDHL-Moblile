@@ -1,0 +1,20 @@
+.Header{
+
+    @include flex(row, space-evenly, center);
+    @include margin();
+    @include neomorphism();
+    @include padding(1em, 0, 1em, 0);
+    &-figure{
+
+        max-width: 5em;
+
+    }
+    &-logo{
+        width: 100%;
+        display: block;
+    }
+
+    &-title{
+        font-size: 1.5rem;
+    }
+}

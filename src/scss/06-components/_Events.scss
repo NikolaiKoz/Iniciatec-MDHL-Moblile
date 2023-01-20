@@ -1,0 +1,10 @@
+.Events{
+    @include flex(column, center, center);
+    @include margin(1em, 1em, 1em, 1em);
+    @include padding(1em, 1em, 1em, 1em);
+    &-title{
+        align-self: start;
+        font-size: 1.5rem;
+    }
+
+}

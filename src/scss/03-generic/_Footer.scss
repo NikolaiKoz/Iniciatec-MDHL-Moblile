@@ -1,0 +1,13 @@
+
+.Footer{
+    @include flex(row, space-evenly, center);
+    position: fixed;
+    bottom: 0;
+    &-figure{
+        max-width: 100%;
+    }
+    &-logo{
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,37 @@
+.Menu{
+    @include flex(row, space-evenly, center);
+    @include margin();
+    @include neomorphism();
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    &-figure{
+        max-width: 4.5em;
+        @include padding(1em, 1em, 1em, 1em)
+    }
+
+    &-figure:hover{
+        animation: animate 0.5s;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+
+    &-img{
+        width: 100%;
+        display: block;
+    }
+}
