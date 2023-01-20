@@ -171,3 +171,17 @@ button {
   padding-bottom: 0;
   padding-left: 1em;
 }
+
+.Contact {
+  padding-top: 2em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+}
+.Contact-paragraph {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+}

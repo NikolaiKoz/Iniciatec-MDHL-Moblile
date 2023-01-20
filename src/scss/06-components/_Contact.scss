@@ -1,0 +1,8 @@
+.Contact{
+    @include padding(2em, 0, 1em, 0);
+
+    &-paragraph{
+        font-size: 1.2rem;
+        @include margin(0, 0, 1em, 0);
+    }
+}
