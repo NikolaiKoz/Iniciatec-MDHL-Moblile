@@ -1,0 +1,16 @@
+body{
+    background-color:   #1e1711 ;
+}
+
+.Navbar{
+    width: 100%;
+    background-color: $Navbar-bg;
+    position: fixed;
+    bottom: 0;
+    @include flex();
+
+    &-list{
+        background-color: red;
+        width: 100%;
+    }
+}
