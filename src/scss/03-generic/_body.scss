@@ -1,0 +1,5 @@
+body{
+    background-color: #222327;
+    @include flex();
+    min-height: 100vh;
+}

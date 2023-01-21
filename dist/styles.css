@@ -55,133 +55,114 @@ button {
   cursor: pointer;
 }
 
-.Header {
+.Wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  border-radius: 1.75em;
-  background: #e0e0e0;
-  box-shadow: inset 1.5em 1.5em 3em #bebebe, inset -1.5em -1.5em 3em #ffffff;
-  padding-top: 1em;
-  padding-right: 0;
-  padding-bottom: 1em;
-  padding-left: 0;
-}
-.Header-figure {
-  max-width: 5em;
-}
-.Header-logo {
-  width: 100%;
-  display: block;
-}
-.Header-title {
-  font-size: 1.5rem;
-}
-
-.Footer {
-  background-color: red;
-  height: 200px;
-  width: 100%;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.Menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  border-radius: 1.75em;
-  background: #e0e0e0;
-  box-shadow: inset 1.5em 1.5em 3em #bebebe, inset -1.5em -1.5em 3em #ffffff;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-.Menu-figure {
-  max-width: 3em;
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-}
-.Menu-figure:hover {
-  animation: animate 0.5s;
-}
-@keyframes animate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.Menu-img {
-  width: 100%;
-  display: block;
-}
-
-.Events {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-}
-.Events-title {
-  align-self: start;
-  font-size: 1.5rem;
+  flex-wrap: nowrap;
 }
 
-.Data-item {
-  margin-top: 1.2em;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-.Data-title {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-}
-.Data-description {
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 1em;
+body {
+  background-color: #222327;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 100vh;
 }
 
-.Contact {
-  padding-top: 2em;
-  padding-right: 0;
-  padding-bottom: 1em;
-  padding-left: 0;
+.Navbar {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
-.Contact-paragraph {
-  font-size: 1.2rem;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 1em;
-  margin-left: 0;
+.Navbar-list {
+  display: flex;
+  width: 350px;
+}
+.Navbar-item {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.Navbar-item--isActive .Navbar-icon {
+  transform: translateY(-35px);
+}
+.Navbar-item--isActive .Navbar-text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.Navbar-item:nth-child(1).Navbar-item--isActive ~ .Navbar-indicator {
+  transform: translateX(0px);
+}
+.Navbar-item:nth-child(2).Navbar-item--isActive ~ .Navbar-indicator {
+  transform: translateX(70px);
+}
+.Navbar-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.Navbar-icon {
+  position: relative;
+  display: block;
+  align-self: center;
+  line-height: 75px;
+  font-size: 1.5em;
+  transition: 0.5s;
+  color: #222327;
+}
+.Navbar-text {
+  position: absolute;
+  color: #222327;
+  font-weight: 500;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.Navbar-indicator {
+  position: absolute;
+  top: -35px;
+  width: 70px;
+  height: 70px;
+  background-color: #29fd53;
+  border-radius: 50%;
+  border: 6px solid #222327;
+  transition: 0.5s;
+}
+.Navbar-indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -10px 0 0 #222327;
+}
+.Navbar-indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  box-shadow: 0 -10px 0 0 #222327;
 }

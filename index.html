@@ -6,45 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/styles.css">
     <link rel="shortcut icon" href="./assets/mdhl_logo.png" type="image/x-icon">
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <title>Home</title>
 </head>
 <body>
-    <header class="Header">
-        <figure class="Header-figure">
-            <img src="./assets/mdhl_logo.png" alt="Logo" loading="lazy" class="Header-logo">
-        </figure>
-        <h1 class="Header-title">MDHL</h1>
-    </header>
 
-    <article class="Events">
-        <h2 class="Events-title">Upcoming Events</h2>
-        <section class="Events-Data Data">
-            <ul class="Data-list">
-                <li class="Data-item">
-                    <h3 class="Data-title">August 4</h3>
-                    <span class="Data-description">MDHL Fundraiser</span>
-                </li>
-                <li class="Data-item">
-                    <h3 class="Data-title">August 16</h3>
-                    <span class="Data-description">Season Kick-off: Meet the Teams</span>
-                </li>
-                <li class="Data-item">
-                    <h3 class="Data-title">September 1</h3>
-                    <span class="Data-description">First Game of the Season (Check Game Schedule for details)</span>
-                </li>
-            </ul>
-        </section>
-    </article>
+    <nav class="Navbar">
+        <ul class="Navbar-list">
+            <li class="Navbar-item Navbar-item--isActive">
+                <a href="#" class="Navbar-link">
+                    <span class="Navbar-icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                    <span class="Navbar-text">About</span>
+                </a>
+            </li>
+            <li class="Navbar-item">
+                <a href="#" class="Navbar-link">
+                    <span class="Navbar-icon">
+                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="Navbar-text">Contact</span>
+                </a>
+            </li>
+            <li class="Navbar-item">
+                <a href="#" class="Navbar-link">
+                    <span class="Navbar-icon">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </span>
+                    <span class="Navbar-text">Rules</span>
+                </a>
+            </li>
+            <li class="Navbar-item">
+                <a href="#" class="Navbar-link">
+                    <span class="Navbar-icon">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                    </span>
+                    <span class="Navbar-text">Registration</span>
+                </a>
+            </li>
+            <li class="Navbar-item">
+                <a href="#" class="Navbar-link">
+                    <span class="Navbar-icon">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </span>
+                    <span class="Navbar-text">Games</span>
+                </a>
+            </li>
 
-<button class="Menu">
-    <picture class="Menu-figure">
-        <img src="./assets/menu.png" alt="Menu" loading="lazy" class="Menu-img">
-    </picture>
-</button>
-<footer class="Footer">
-    <figure class="Footer-figure">
-        <img src="./assets/hockey.png" alt="Footer image" loading="lazy" class="Footer-logo">
-    </figure>
-</footer>
+            <li class="Navbar-item">
+                <a href="#" class="Navbar-link">
+                    <span class="Navbar-icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="Navbar-text">Home</span>
+                </a>
+            </li>
+            <div class="Navbar-indicator"></div>
+        </ul>
+    </nav>
+
+    <script>
+        const list = document.querySelectorAll('.Navbar-item');
+        function activeLink(){
+            list.forEach((item) => item.classList.remove('Navbar-item--isActive'));
+            this.classList.add('Navbar-item--isActive');
+        }
+     list.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
+
 </body>
 </html>
