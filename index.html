@@ -68,7 +68,13 @@
 
         <script>
 
+            const items = document.querySelectorAll('.Navbar-item');
 
+            items.forEach( item => {
+                item.addEventListener('click', () => {
+                    document.querySelector('.Navbar-item--isActive').classList.remove('Navbar-item--isActive');
+                    item.classList.add('Navbar-item--isActive');
+                })});
 
 
         </script>
