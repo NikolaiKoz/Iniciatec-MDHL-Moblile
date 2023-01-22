@@ -3,6 +3,7 @@
 //Settings
 @import "./01-settings/_colors.scss";
 @import "./01-settings/_fonts";
+@import "./01-settings/_media";
 
 //Tools
 @import "./02-tools/_mixin.scss";
@@ -17,6 +18,7 @@
 
 //Components
 @import "./06-components/_Navbar.scss";
+@import "./06-components/_Logo"
 
 
 //Utilities
