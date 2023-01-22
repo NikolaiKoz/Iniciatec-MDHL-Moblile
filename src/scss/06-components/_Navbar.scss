@@ -1,71 +1,61 @@
-body{
-    background-color:   #1e1711 ;
+body {
+  background-color: #1e1711;
 }
 
-.Navbar{
-    width: 100%;
+.Navbar {
+  width: 100%;
+  background-color: $Navbar-bg;
+  position: fixed;
+  bottom: 0;
+  @include flex();
+
+  &-list {
     background-color: $Navbar-bg;
-    position: fixed;
-    bottom: 0;
-    @include flex();
+    width: 100%;
+    height: 4rem;
+    @include flex($justify: space-evenly, $wrap: nowrap);
+    padding: 1rem 0 0 0;
+  }
 
-    &-list{
-        background-color: $Navbar-bg;
-        width: 100%;
-        height: 4rem;
-        @include flex($justify: space-evenly, $wrap: nowrap);
-        padding: 1rem 0 0 0;
+  &-item {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+
+    &--isActive {
+      transform: translateY(-2rem);
+      position: relative;
+      pointer-events: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        background-color: $Logo-yellow;
+        z-index: -1;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 0.2rem solid $Logo-veryDark-Brown;
+      }
     }
 
-    &-item{
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        transition: transform 0.2s ease-in-out;
+    //Para pc
+    // &:hover {
+    //   transform: translateY(-0.3rem);
+    // }
+  }
 
+  &-icon {
+    color: $Logo-veryDark-Brown;
+    margin: 0 0 1.5rem 0;
+  }
 
-        &--isActive{
-            transform: translateY(-2rem);
-            position: relative;
-            pointer-events: none;
-
-            &::before{
-                content: "";
-                position: absolute;
-                width: 110%;
-                height: 110%;
-                background-color: $Logo-yellow;
-                z-index: -1;
-                top: 35%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border-radius: 50%;
-                border: .2rem solid $Logo-veryDark-Brown;
-            }
-        }
-
-        &:hover{
-            transform: translateY(-.3rem);
-        }
-
-
-    }
-
-
-
-
-
-
-    &-icon{
-        color: $Logo-veryDark-Brown;
-        margin: 0 0 1.5rem 0;
-
-    }
-
-    &-text{
-        color: $Logo-veryDark-Brown;
-        text-align: center;
-    }
-
+  &-text {
+    color: $Logo-veryDark-Brown;
+    text-align: center;
+  }
 }
-
