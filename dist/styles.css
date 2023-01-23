@@ -227,3 +227,15 @@ body {
   padding: 0 0 0 1rem;
   margin: 1rem 0;
 }
+
+.About {
+  width: 100%;
+  padding: 1rem;
+}
+.About-title {
+  padding: 1rem;
+  font-size: 2em;
+}
+.About-description {
+  padding: 0 0 0 2rem;
+}
