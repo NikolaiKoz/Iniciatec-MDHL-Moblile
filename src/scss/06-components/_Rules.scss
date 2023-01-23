@@ -1,0 +1,40 @@
+.Rules{
+    width: 100%;
+    padding: 1rem;
+
+    &-title{
+        padding: 1rem;
+        font-size: 2em;
+    }
+
+    &-subtitle{
+        &--one, &--two{
+            text-align: center;
+            padding: .5rem;
+            font-size: 1.5em;
+        }
+
+        &--three{
+            text-align: center;
+            padding: 0 0 .5rem  0;
+        }
+    }
+
+    &-containerTitleandIcon{
+        @include flex($justify: flex-start);
+        padding: .5rem ;
+
+    }
+}
+
+.Sportmanship{
+    &-title{
+        font-size: 1.5em;
+        padding: 0  1rem 0 .5rem ;
+    }
+
+    &-list{
+        padding: 0 0 0 2rem;
+        list-style-type: square;
+    }
+}
