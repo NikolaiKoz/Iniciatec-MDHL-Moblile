@@ -83,6 +83,13 @@ p, span {
   flex-wrap: wrap;
 }
 
+.Wrapper-content {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: red;
+}
+
 body {
   background-color: #1e1711;
 }
@@ -103,7 +110,8 @@ body {
 @media screen and (min-width: 1024px) {
   .Navbar {
     position: inherit;
-    padding: 0 0 0 0;
+    padding: 0 2rem;
+    margin: 0 0 2rem 0;
   }
 }
 .Navbar-list {
@@ -111,14 +119,16 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   height: 100%;
 }
 @media screen and (min-width: 1024px) {
   .Navbar-list {
-    width: 60%;
+    width: calc(100% - 4.5rem);
+    justify-content: space-between;
+    padding: 0 4rem;
   }
 }
 .Navbar-item {
@@ -185,4 +195,22 @@ body {
 .Logo-title {
   color: #1e1711;
   text-align: center;
+}
+
+.Home {
+  width: 100%;
+  padding: 1rem;
+}
+.Home-title {
+  padding: 1rem;
+  font-size: 2em;
+}
+.Home-item {
+  margin: 1rem 0 0 0;
+}
+.Home-date {
+  padding: 0 0 0 1rem;
+}
+.Home-description {
+  padding: 0 0 0 2rem;
 }

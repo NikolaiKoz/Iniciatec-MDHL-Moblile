@@ -13,18 +13,21 @@ body {
 
   @include responsive(desktop) {
     position: inherit;
-    padding: 0 0 0 0;
+    @include padding;
+    margin: 0 0 2rem 0;
   }
 
   &-list {
     background-color: $Navbar-bg;
     width: 100%;
 
-    @include flex($justify: space-evenly, $wrap: nowrap);
+    @include flex($justify: space-around, $wrap: nowrap);
     height: 100%;
 
     @include responsive(desktop) {
-      width: 60%;
+      width: calc(100% - 4.5rem);
+      justify-content: space-between;
+      padding: 0 4rem;
     }
   }
 

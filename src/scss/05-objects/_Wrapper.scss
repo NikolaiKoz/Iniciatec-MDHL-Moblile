@@ -3,3 +3,10 @@
     max-width: 90rem;
     @include flex();
 }
+
+.Wrapper-content{
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: red;
+}

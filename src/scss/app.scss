@@ -4,6 +4,7 @@
 @import "./01-settings/_colors.scss";
 @import "./01-settings/_fonts";
 @import "./01-settings/_media";
+@import "./01-settings/_padding";
 
 //Tools
 @import "./02-tools/_mixin.scss";
@@ -17,8 +18,9 @@
 @import "./05-objects/_Wrapper.scss";
 
 //Components
-@import "./06-components/_Navbar.scss";
-@import "./06-components/_Logo"
+@import "./06-components/_Navbar";
+@import "./06-components/_Logo";
+@import "./06-components/Home";
 
 
 //Utilities
