@@ -1,0 +1,14 @@
+.Contact{
+    width: 100%;
+    padding: 1rem;
+
+    &-title{
+        padding: 1rem;
+        font-size: 2em;
+    }
+
+    &-info, &-response{
+        padding: 0 0 0 1rem;
+        margin: 1rem 0;
+    }
+}

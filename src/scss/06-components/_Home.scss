@@ -1,25 +1,21 @@
-.Home{
-    width: 100%;
+.Home {
+  width: 100%;
+  padding: 1rem;
+
+  &-title {
     padding: 1rem;
+    font-size: 2em;
+  }
 
-    &-title{
-        padding: 1rem;
-        font-size: 2em;
-    }
+  &-item {
+    margin: 1rem 0 0 0;
+  }
 
-    &-list{
-        // padding: 1rem;
-    }
+  &-date {
+    padding: 0 0 0 1rem;
+  }
 
-    &-item{
-        margin: 1rem 0 0 0;
-    }
-
-    &-date{
-        padding: 0 0 0 1rem;
-    }
-
-    &-description{
-        padding: 0 0 0 2rem;
-    }
+  &-description {
+    padding: 0 0 0 2rem;
+  }
 }

@@ -214,3 +214,16 @@ body {
 .Home-description {
   padding: 0 0 0 2rem;
 }
+
+.Contact {
+  width: 100%;
+  padding: 1rem;
+}
+.Contact-title {
+  padding: 1rem;
+  font-size: 2em;
+}
+.Contact-info, .Contact-response {
+  padding: 0 0 0 1rem;
+  margin: 1rem 0;
+}
