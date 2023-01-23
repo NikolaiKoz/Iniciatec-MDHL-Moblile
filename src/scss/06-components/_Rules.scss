@@ -20,18 +20,27 @@
         }
     }
 
-    &-containerTitleandIcon{
-        @include flex($justify: flex-start);
-        padding: .5rem ;
 
-    }
 }
 
-.Sportmanship{
+.ContainerTitleandIcon{
+
+    &-container{
+        @include flex($justify: flex-start);
+        padding: .5rem ;
+    }
     &-title{
         font-size: 1.5em;
         padding: 0  1rem 0 .5rem ;
     }
+    &-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+}
+
+.Sportmanship{
 
     &-list{
         padding: 0 0 0 2rem;
