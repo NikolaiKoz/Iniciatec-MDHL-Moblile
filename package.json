@@ -20,6 +20,7 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.10.3"
+    "bootstrap-icons": "^1.10.3",
+    "firebase-tools": "^11.21.0"
   }
 }
