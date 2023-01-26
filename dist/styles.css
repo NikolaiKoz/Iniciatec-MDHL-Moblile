@@ -300,6 +300,10 @@ body {
   list-style-type: square;
 }
 
+.Equipment-description {
+  padding: 0 0 0 1rem;
+}
+
 #first_name, #last_name, #street_address, #city, #zip, #birth_date, #parent_guardian, #contact_phone, #contact_email, #signature, #sig_date {
   display: block;
   margin-bottom: 0.5em;
