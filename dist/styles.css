@@ -304,6 +304,14 @@ body {
   padding: 0 0 0 1rem;
 }
 
+.NumberOfPlayers-list {
+  padding: 0 0 0 2rem;
+  list-style-type: square;
+}
+.NumberOfPlayers-description {
+  padding: 0 0 0 2rem;
+}
+
 #first_name, #last_name, #street_address, #city, #zip, #birth_date, #parent_guardian, #contact_phone, #contact_email, #signature, #sig_date {
   display: block;
   margin-bottom: 0.5em;

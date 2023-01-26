@@ -82,6 +82,16 @@
 
 }
 
+.NumberOfPlayers{
+  &-list{
+    padding: 0 0 0 2rem;
+    list-style-type: square;
+  }
+  &-description{
+    padding: 0 0 0 2rem;
+  }
+}
+
 
 
 
