@@ -269,26 +269,33 @@ body {
 .ContainerTitleandIcon-title {
   font-size: 1.5em;
   padding: 0 1rem 0 0.5rem;
+  margin: 1rem 0;
 }
 .ContainerTitleandIcon-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.Registration {
-  padding: 1rem;
-}
-
-.Dates {
-  padding: 1rem;
-}
-
-.Form {
-  width: 100%;
-  padding: 1rem;
-}
-
 .Sportmanship-list {
+  padding: 0 0 0 2rem;
+  list-style-type: square;
+}
+
+.FifaFieldRegulations-list {
+  padding: 0 0 0 2rem;
+  list-style-type: number;
+}
+.FifaFieldRegulations-subtitle {
+  margin: 1rem 0 1rem 0;
+}
+.FifaFieldRegulations-description {
+  padding: 0 0 0 1rem;
+}
+.FifaFieldRegulations-subList {
+  padding: 0 0 0 2rem;
+  list-style-type: lower-alpha;
+}
+.FifaFieldRegulations-subSubList {
   padding: 0 0 0 2rem;
   list-style-type: square;
 }

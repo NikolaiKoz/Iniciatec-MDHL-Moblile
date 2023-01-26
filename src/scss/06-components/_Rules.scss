@@ -31,26 +31,14 @@
     }
     &-title{
         font-size: 1.5em;
-        padding: 0  1rem 0 .5rem ;
+        padding: 0 1rem 0 .5rem ;
+        margin: 1rem 0;
     }
     &-icon{
         width: 1.5rem;
         height: 1.5rem;
     }
 
-}
-
-.Registration{
-    padding: 1rem;
-}
-
-.Dates{
-    padding: 1rem;
-}
-
-.Form{
-    width: 100%;
-    padding: 1rem;
 }
 
 .Sportmanship{
@@ -60,6 +48,43 @@
         list-style-type: square;
     }
 }
+
+.FifaFieldRegulations{
+
+  &-list{
+    padding: 0 0 0 2rem;
+    list-style-type: number;
+  }
+  &-subtitle{
+    margin: 1rem 0 1rem 0;
+  }
+  &-description{
+    padding: 0 0 0 1rem;
+
+  }
+  &-subList{
+    padding: 0 0 0 2rem;
+
+    list-style-type: lower-alpha;
+  }
+  &-subSubList{
+    padding: 0 0 0 2rem;
+    list-style-type: square;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #first_name, #last_name, #street_address, #city, #zip, #birth_date, #parent_guardian, #contact_phone, #contact_email, #signature, #sig_date{
