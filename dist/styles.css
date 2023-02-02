@@ -269,6 +269,7 @@ body {
 .ContainerTitleandIcon-title {
   font-size: 1.5em;
   padding: 0 1rem 0 0.5rem;
+  margin: 1rem 0;
 }
 .ContainerTitleandIcon-icon {
   width: 1.5rem;
@@ -278,4 +279,90 @@ body {
 .Sportmanship-list {
   padding: 0 0 0 2rem;
   list-style-type: square;
+}
+
+.FifaFieldRegulations-list {
+  padding: 0 0 0 2rem;
+  list-style-type: number;
+}
+.FifaFieldRegulations-subtitle {
+  margin: 1rem 0 1rem 0;
+}
+.FifaFieldRegulations-description {
+  padding: 0 0 0 1rem;
+}
+.FifaFieldRegulations-subList {
+  padding: 0 0 0 2rem;
+  list-style-type: lower-alpha;
+}
+.FifaFieldRegulations-subSubList {
+  padding: 0 0 0 2rem;
+  list-style-type: square;
+}
+
+.Equipment-description {
+  padding: 0 0 0 1rem;
+}
+
+.NumberOfPlayers-list {
+  padding: 0 0 0 2rem;
+  list-style-type: square;
+}
+.NumberOfPlayers-description {
+  padding: 0 0 0 2rem;
+}
+
+#first_name, #last_name, #street_address, #city, #zip, #birth_date, #parent_guardian, #contact_phone, #contact_email, #signature, #sig_date {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#street_address {
+  width: 20em;
+}
+
+#city {
+  width: 15em;
+}
+
+#zip {
+  width: 4em;
+}
+
+#birth_date {
+  width: 6em;
+}
+
+#contact_phone {
+  width: 7em;
+}
+
+#contact_email {
+  width: 15em;
+}
+
+#sig_date {
+  width: 5em;
+}
+
+fieldset {
+  border: solid 1px green;
+}
+
+form h3 {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.stylized label {
+  width: 12em;
+  padding-right: 1em;
+  text-align: right;
+  float: left;
+}
+
+input {
+  padding: 4px 2px;
+  border: solid 1px green;
 }
